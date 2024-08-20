@@ -18,7 +18,8 @@ public class Main {
         post("/parseSql", (req, res) -> {
             Map<String, String> map = JsonUtil.parse(req.body());
             ls.add(map.get("sql"));
-            Optional<SqlMeta> sqlMetaOptional = OpenLineageSql.parse(ls);            SqlMeta sqlMeta = null;
+            Optional<SqlMeta> sqlMetaOptional = OpenLineageSql.parse(ls);
+            SqlMeta sqlMeta = null;
             if (sqlMetaOptional.isPresent()) {
                 sqlMeta = sqlMetaOptional.get();
             }
