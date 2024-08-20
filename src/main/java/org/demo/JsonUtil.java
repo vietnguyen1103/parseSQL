@@ -1,4 +1,4 @@
-package org.viettel;
+package org.demo;
 
 import com.google.gson.Gson;
 

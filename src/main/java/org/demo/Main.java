@@ -1,6 +1,5 @@
-package org.viettel;
+package org.demo;
 
-import com.google.gson.Gson;
 import io.openlineage.sql.SqlMeta;
 import io.openlineage.sql.OpenLineageSql;
 
